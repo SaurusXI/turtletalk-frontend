@@ -3,10 +3,10 @@ btn.addEventListener("click",
     function send_request(){
         console.log('here');
         const URL = "http://localhost:5000/api/test";
-        var choice = document.getElementById("t2");
+        var choice = document.getElementById("sel1");
         var speaker = choice.options[choice.selectedIndex].value;
         const data={
-            target_text : document.getElementById("t1").value,
+            target_text : document.getElementById("inputField").value,
             target_speaker : speaker
         };
 
